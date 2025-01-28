@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContentWrapper{
+    display: flex;
+    width: 100%;
+    background-color: #0E0E0E;
+    justify-content: center;
+}
+body{
+    background-color: #0E0E0E;
+}
+
+.mainContainer, .mainWrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 840px;
+    gap: 32px;
+}
+
+.headerMainDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    width: 100%;
+}
+
+.whiteNavBarText{
+    color: #FFF;
+    font-size: 16px;
+}
+.navBarGreyText{
+    font-size: 16px;
+    color: #7B7B7B;
+}
+.arlene{
+    color: #FFF;
+    font-size: 16px;
+}
+
+.profileDiv{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.backgroundImageMainDiv{
+    display: flex;
+    border-radius: 16px;
+    background-image: url("images/batmanImg.svg") , url("images/bacckgroundMainImg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px ,center;
+    padding: 40px;
+}
+
+.imageTextsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.headTextsDiv, .descriptionDiv{
+    width: 350px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.Title{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.ratdingDiv{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.starsDiv{
+    display: flex;
+    gap: 4px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.redButton:hover{
+    background-color: green;
+}
+
+.redButton{
+    border-radius: 8px 32px;
+    background: #A00;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    padding: 12px 24px;
+    width: 135px;
+    margin-top: 16px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.mainHeader{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.searchDiv{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.twiDivsWrapperDiv{
+    display: flex;
+    gap: 12px;
+}
+
+.searchInputDiv{
+    display: flex;
+    position: relative;
+}
+
+input:focus{
+    border: none;
+}
+
+input{
+    border: none;
+}
+
+.textInput:focus{
+    border: 3px solid #A00;
+}
+
+.icon{
+    position: absolute;
+    left: 12px;
+    top: 4px;
+    
+}
+
+.textInput{
+    padding: 8px;
+    padding-left: 46px;
+    color: #FFF;
+    border-radius: 24px;
+    background: #191919;
+}
+
+::placeholder{
+    margin-left: 8px;
+}
+
+.yearsSelect{
+    border: none;
+    padding: 8px 18px;
+    border-radius: 24px;
+    background-color: #191919;
+}
+
+.iconArrow{
+    position: absolute;
+    top: 8px;
+}
+
+select{
+    color: #7B7B7B;
+    font-size: 16px;
+}
+
+select > option{
+    background-color: #191919;
+}
+
+.yearOption:hover{
+    background-color: red;
+    padding: 10px 16px;
+}
+
+.burgerIcon{
+    display: none;
+}
+
+
+.yearsSelectDiv{
+    position: relative;
+}
+
+.movieCardWrapper{
+    display: flex;
+    margin-bottom: 240px;
+    width: 100%;
+    justify-content: center;
+}
+
+.moviesMainCOntainer{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 630px;
+}
+
+
+
+.redWathnowButton{
+    display: none;
+    border-radius: 8px 32px;
+    background: #A00;
+    box-shadow: 5px 2px 11.9px 0px #A00;
+    padding: 12px 24px;
+}
+
+.redWathnowButton:hover{
+    display: flex;
+}
+
+.killerMovieCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/killerImg.svg");
+}
+
+.iCameByCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/iCameImg.svg");
+}
+
+.wiedzimCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/wiedzminImg.svg");
+}
+
+.ashesCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/ashesImg.svg");
+}
+
+.devilsCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/the devilsOwnImg.svg");
+}
+
+.pricelesscard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/pricelessImg.svg");
+}
+
+.theFirstCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/inTheFirstImg.svg");
+}
+
+.murderCard:hover{
+    filter: blur(2px);
+    background-image: url("images/coverImg.svg"), url("images/murderImg.svg");
+}
+
+.killerMovieCard, .iCameByCard, .wiedzimCard, .ashesCard,
+.devilsCard, .pricelesscard, .theFirstCard, .murderCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 219px;
+}
+  
+
+.murderCard{
+    background-image: url("images/murderImg.svg");
+}
+.theFirstCard{
+    background-image: url("images/inTheFirstImg.svg");
+}
+.pricelesscard{
+    background-image: url("images/pricelessImg.svg");
+}
+.devilsCard{
+    background-image: url("images/the devilsOwnImg.svg");
+}
+.ashesCard{
+    background-image: url("images/ashesImg.svg");
+}
+.wiedzimCard{
+    background-image: url("images/wiedzminImg.svg");
+}
+.iCameByCard{
+    background-image: url("images/iCameImg.svg");
+}
+.killerMovieCard{
+    background-image: url("images/killerImg.svg");
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainContainer{
+        min-width: 768px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainWrapper, .mainContainer{
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .headerMainDiv{
+        padding: 24px 32px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .headerMainDiv{
+        padding: 16px;
+    }
+}
+.headerTextsDiv{
+    display: flex;
+    gap: 12px;
+}
+@media screen and (max-width: 767px) {
+    .headerTextsDiv{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .arlene{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .backgroundImageMainDiv{
+        width: 690px;
+        justify-self: center;
+        align-self: center;
+        height: 472px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .backgroundImageMainDiv{
+        background-size: cover;
+        background-image: url("images/phoneBackgroundImg.svg");
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imageTextsDiv{
+        width: 100%;
+        max-width: 265px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .headTextsDiv, .descriptionDiv{
+        width: 100%;
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .searchDiv{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .burgerIcon{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .moviesMainCOntainer{
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .killerMovieCard, .iCameByCard, .wiedzimCard, .ashesCard,
+    .devilsCard, .pricelesscard, .theFirstCard, .murderCard{
+        width: 158px;
+        height: 219px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .killerMovieCard, .iCameByCard, .wiedzimCard, .ashesCard,
+    .devilsCard, .pricelesscard, .theFirstCard, .murderCard{
+        background-size: 120%;
+        width: 288px;
+        border-radius: 16px;
+    }
+}
